@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Basquet Adaptado-contacto</title>
+
+
+
+</head>
+<body>
+	<div class="contenedor">
+		<nav class="gNav">
+			<a href="../index.html">
+			<img src="../img/logo.png" alt="logo basquet adaptado">
+			</a>
+			<ul>
+				<li><a href="../index.html">INICIO</a></li>
+				<li><a href="historia.html">HISTORIA</a>
+				<li><a href="comosejuega.html">¿COMO SE JUEGA?</a></li>
+				<li><a href="galeria.html">GALERIA</a></li>
+				<li><a href="contacto.html">CONTACTO</a></li>
+			</ul>
+		</nav>
+		<header class="gHeader">
+			<img src="../img/header.jpeg" alt="jugadores se disputan la pelota" class="encabezado__img--fluid">
+		</header>
+		<br>
+		<main class="gMain">
+			<section class="bgArticle main text">
+				<h1>Queremos conocerte</h1>
+				  <!--inicia formulario-->
+				  <form action="envio.php" method="post">
+				  	<fieldset>
+				  		<legend>Tus datos</legend>
+					  	<label for="nombre">Nombre y apellido</label>
+					  	<input type="text" placeholder="Alexis Valenzuela" name="nombre" id="nombre">
+					  	<br><br>
+					  	<label for="email">Email</label>
+					  	<input type="email" placeholder="mail@mail.com" name="email" id="email">
+				  	</fieldset>
+				  	<fieldset>
+				  		<legend>Contanos</legend>
+				  		<label for="lo vi alguna vez">Lo vi alguna vez</label>
+				  		<input type="checkbox" name="lo vi alguna vez" id="lo vi alguna vez" value="lo vi alguna vez">
+				  		<label for="lo jugue alguna vez">Lo juguè alguna vez</label>
+				  		<input type="checkbox" name="lo jugue alguna vez" id="lo jugue alguna vez" value="lo jugue alguna vez">
+				  		<br>
+				  		<label for="tiene discapacidad">Tengo una discapacidad</label>
+				  		<input type="radio" name="tiene discapacidad" id="tiene discapacidad" value="tiene discapacidad">
+				  		<label for="no tiene discapacidad">No tengo discapacidad</label>
+				  		<input type="radio" name="tiene discapacidad" id="no tiene discapacidad" value="no tiene discapacidad">
+				  		<br>
+				  		<label for="le gustaria jugar">Te gustaria jugar</label>
+				  		<select name="le gustaria jugar" id="le gustaria jugar">
+				  			<option value="si">SI</option>
+				  			<option value="no">NO</option>
+				  			<option value="tal vez">TAL VEZ</option>
+				  		</select>
+				  	</fieldset><br>
+				  	<label for="mensaje">Dejanos tu mensaje</label><br>
+				  	<textarea name="mensaje" id="mensaje" cols="30" rows="10">
+				  	</textarea><br>
+				  	<input type="reset" value="Cancelar">
+				  	<input type="submit" value="Enviar">
+				  	</form>
+				  	<!--Cierra formulario-->
+				
+			</section>
+		</main>
+		<footer class="gFooter">
+			<h2 class="pie__titulo--md">Para mas informacion</h2>
+			<a href="https://www.facebook.com/InternationalWheelchairBasketballFederation" target="_blank">
+			  <img src="../img/logofacebook.png" alt="facebook de la IWBF" class="pie__icon--sm">
+			</a>
+			<a href="https://www.youtube.com/user/iwbforg" target="_blank">
+				<img src="../img/logoyoutube.jpeg" alt="canal de youtube de la IWBF" class="pie__icon--sm">
+			</a>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2? family= Nunito:wght@600 & display=swap');
+
+*{
+	font-family: 'Nunito', sans-serif;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+
+body{
+	background-image: url(../img/fondo.png);
+	background-attachment: fixed;
+}
+
+h1,h2,h3{
+color: rgb(41, 156, 18);
+}
+h1{
+	font-size: 4rem;
+}
+h2{
+	font-size: 3rem;
+
+}
+h3{
+	font-size: 2rem;
+}
+
+.textGrey{
+	color: rgb(0, 0, 0);
+}
+nav a img{
+	width: 200px;
+}
+
+nav{
+	background-color: rgba(41, 156, 50, 0.3);
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.bgArticle{
+	background-color: rgba(41, 156, 18, 0.3);
+
+}
+
+.textCenter{
+	text-align: center;
+}
+
+	nav ul{
+	list-style: none;
+
+}
+		nav ul li{
+            font-size: 2rem;
+			display: flex;
+		}
+		nav ul li a{
+			text-decoration: none;
+			color: white;
+			
+		}
+		.text{
+			font-size: 2rem;
+			font-weight: 300;
+			line-height: 2.4rem;
+			justify-content: cemter;
+		}
+
+.encabezado__img--fluid{
+	width: 100%;
+}
+
+.main{
+	width: 90%;
+	height: auto;
+	margin: 10px auto;
+	padding: 20px;
+	box-sizing: border-box;
+	border: solid 2px green;
+}
+nav ul{
+	
+}
+
+nav ul li{
+	
+	list-style: none;
+	display: inline-block;
+	margin-right:50px;
+	height: 30px;
+	font-size: 2rem;
+			
+
+}
+#aside{
+	display: flex;
+}
+
+
+.pie__icon--sm{
+	width: 50px;
+}
+
+.pie__titulo--md{
+	font-size: 3rem;
+}
+
+footer{
+	background-color: black;
+}
+
+section div img{
+
+	height: 300px;
+	width: 400px;
+	margin: 10px;
+
+}
+
+.galeriFlex{
+	display: flex;
+	margin: 20px ;
+	padding: 5px;
+}
+
+.orden{
+	displey: flex ;
+	flex: 30%;
+	padding: 5px;
+}
+.contenedor{
+	display: grid;
+	grid-template-columns:1fr;
+	grid-template-rows: auto;
+	grid-template-areas: "n" "h" "m" "a" "f";
+}
+.gNav{
+	grid-area: n;
+}
+.gHeader{
+	grid-area: h;
+}
+.gMain{
+	grid-area: m;
+}
+.gAside{
+
+	grid-area: a;
+	
+}
+.gFooter{
+	grid-area: f;
+}
+
+
+@media (min-width: 768px){
+	.contenedor{
+		grid-template-columns: 80vw 20vw;
+		grid-template-rows: auto;
+		grid-template-areas: "n n"
+		"h h" "m m" "f f";
+
+	}
+	
+	
+}
+
+
+@media (min-width: 1024px){
+	.contenedor{
+		grid-template-columns: 80vw 20vw;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas: "n n"
+		"h h" "m m" "f f";
+
+	}
+	
+
+}
