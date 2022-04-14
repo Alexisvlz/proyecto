@@ -1,4 +1,5 @@
 footer{
-	background-color: black;
+
+	background-color: map-get($map: $fondos,$key:'dos');
 	
 }

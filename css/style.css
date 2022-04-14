@@ -49,28 +49,27 @@ h3 {
 .textGrey {
   color: black; }
 
-.bgArticle {
-  background-color: rgba(41, 156, 18, 0.3); }
-
 .textCenter {
   text-align: center; }
-
-.text {
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 2.4rem;
-  justify-content: cemter; }
+  .textCenter .text {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.4rem;
+    justify-content: cemter; }
 
 .encabezado__img--fluid {
   width: 100%; }
 
-.main {
+.main, .bgArticle {
   width: 90%;
   height: auto;
   margin: 10px auto;
   padding: 20px;
   box-sizing: border-box;
   border: solid 2px green; }
+
+.bgArticle {
+  background-color: rgba(41, 156, 18, 0.3); }
 
 #aside {
   display: flex; }

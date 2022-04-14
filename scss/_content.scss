@@ -19,38 +19,50 @@ h1,h2,h3{
 color: rgb(41, 156, 18);
 }
 h1{
-	font-size: $texXl;
+	font-size: $textXl;
 }
 h2{
 	font-size: $textMd;
 
 }
 h3{
-	font-size: $texXl;
+	font-size: $textXl;
 }
 
 .textGrey{
 	color: rgb(0, 0, 0);
 }
 
-
-.bgArticle{
-	background-color: rgba(41, 156, 18, 0.3);
+@mixin texto($font-size,$font-weight,$line-height){
+	font-size: $font-size;
+	font-weight: $font-weight;
+	line-height: $line-height;
+	justify-content: cemter; 
 
 }
+
+$fondos:(
+	'uno':rgba(41, 156, 18, 0.3),
+			'dos':black
+	);
+
+
+
 
 .textCenter{
 	text-align: center;
-}
+
 
 	
 		.text{
-			font-size: $textSm;
-			font-weight: 300;
-			line-height: 2.4rem;
-			justify-content: cemter;
+			@include texto($textSm,300,2.4rem)
+			//font-size: $textSm;
+			//font-weight: 300;
+			//line-height: 2.4rem;
+			//justify-content: cemter;
 		}
-
+	
+}
 .encabezado__img--fluid{
 	width: 100%;
 }
@@ -63,6 +75,12 @@ h3{
 	box-sizing: border-box;
 	border: solid 2px green;
 }
+.bgArticle{
+	@extend .main;
+	background-color: rgba(41, 156, 18, 0.3);
+}
+
+
 
 #aside{
 	display: flex;
