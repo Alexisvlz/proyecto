@@ -3,3 +3,10 @@ footer{
 	background-color: map-get($map: $fondos,$key:'dos');
 	
 }
+.pie__icon--sm{
+	width: 50px;
+}
+
+.pie__titulo--sm{
+	font-size: $textSm;
+}

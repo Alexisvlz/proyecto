@@ -16,7 +16,7 @@ body{
 }
 
 h1,h2,h3{
-color: rgb(41, 156, 18);
+color: #618C03;
 }
 h1{
 	font-size: $textXl;
@@ -26,7 +26,7 @@ h2{
 
 }
 h3{
-	font-size: $textXl;
+	font-size: $textSm;
 }
 
 .textGrey{
@@ -43,7 +43,7 @@ h3{
 
 $fondos:(
 	'uno':rgba(41, 156, 18, 0.3),
-			'dos':black
+			'dos':#2F7635
 	);
 
 
@@ -55,7 +55,7 @@ $fondos:(
 
 	
 		.text{
-			@include texto($textSm,300,2.4rem)
+			@include texto($textMd,300,2.4rem)
 			//font-size: $textSm;
 			//font-weight: 300;
 			//line-height: 2.4rem;
@@ -78,22 +78,24 @@ $fondos:(
 .bgArticle{
 	@extend .main;
 	background-color: rgba(41, 156, 18, 0.3);
+	font-size: $textSm
 }
 
 
 
 #aside{
 	display: flex;
+	
+}
+.iframe{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
 }
 
 
-.pie__icon--sm{
-	width: 50px;
-}
 
-.pie__titulo--md{
-	font-size: 3rem;
-}
 
 
 section{ 
@@ -110,18 +112,19 @@ section{
 	display: flex;
 	margin: 20px ;
 	padding: 5px;
+
 }
 
 .orden{
-	display: flex ;
+	display: grid ;
 	flex: 30%;
 	padding: 5px;
 }
 .contenedor{
 	display: grid;
-	grid-template-columns:1fr;
-	grid-template-rows: auto;
-	grid-template-areas: "n" "h" "m" "a" "f";
+	grid-template-columns:auto;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas: "n" "h" "m" "f";
 }
 .gNav{
 	grid-area: n;
@@ -132,40 +135,18 @@ section{
 .gMain{
 	grid-area: m;
 }
-.gAside{
 
-	grid-area: a;
 	
-}
+
 .gFooter{
 	grid-area: f;
 }
 
 
-@media (min-width: 768px){
-	.contenedor{
-		grid-template-columns: 80vw 20vw;
-		grid-template-rows: auto;
-		grid-template-areas: "n n"
-		"h h" "m m" "f f";
 
-	}
-	
-	
-}
-
-
-@media (min-width: 1024px){
-	.contenedor{
-		grid-template-columns: 80vw 20vw;
-		grid-template-rows: auto auto auto auto;
-		grid-template-areas: "n n"
-		"h h" "m m" "f f";
-
-	}
 	
 
-}
+
 
 
 
