@@ -117,11 +117,21 @@ section div img {
 .error404 {
   background-image: url(../img/error404.jpg);
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center center;
+  background-attachment: fixed; }
   .error404 h1 {
     color: black;
     text-align: center;
     margin-top: 500px; }
+
+@media (max-width: 600px) {
+  .error404 {
+    background-size: cover; }
+    .error404 h1 {
+      font-size: 3rem;
+      color: black;
+      text-align: center;
+      margin-top: 450px; } }
 
 footer {
   background-color: #2F7635; }

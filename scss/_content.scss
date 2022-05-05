@@ -142,16 +142,28 @@ section{
 .error404{
 	background-image: url(../img/error404.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
+	background-attachment: fixed;
+	
+
 	h1{
 		color: black;
 		text-align: center;
 		margin-top: 500px;
-
 	}
-
 }
 
+@media (max-width: 600px){
+	.error404{
+		background-size: cover;
+		h1{
+			font-size: $textMd;
+			color: black;
+			text-align: center;
+			margin-top: 450px;
+	}
+	}
+}
 
 
 
