@@ -35,7 +35,7 @@ body {
   background-attachment: fixed; }
 
 h1, h2, h3 {
-  color: #618C03; }
+  color: #24492e; }
 
 h1 {
   font-size: 4rem; }
@@ -122,11 +122,6 @@ section div img {
     color: black;
     text-align: center;
     margin-top: 500px; }
-
-.boton {
-  display: block;
-  text-decoration: none;
-  background-color: green; }
 
 footer {
   background-color: #2F7635; }
