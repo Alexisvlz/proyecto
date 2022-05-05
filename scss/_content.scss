@@ -56,10 +56,7 @@ $fondos:(
 	
 		.text{
 			@include texto($textMd,300,2.4rem)
-			//font-size: $textSm;
-			//font-weight: 300;
-			//line-height: 2.4rem;
-			//justify-content: cemter;
+			
 		}
 	
 }
@@ -116,7 +113,6 @@ section{
 }
 
 .orden{
-	display: grid ;
 	flex: 30%;
 	padding: 5px;
 }
@@ -140,6 +136,27 @@ section{
 
 .gFooter{
 	grid-area: f;
+	text-align: center;
+}
+
+.error404{
+	background-image: url(../img/error404.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	h1{
+		color: black;
+		text-align: center;
+		margin-top: 500px;
+
+	}
+
+}
+.boton{
+	display: block;
+	text-decoration: none;
+	background-color:green
+	margin: auto
+	
 }
 
 

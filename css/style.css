@@ -92,7 +92,6 @@ section div img {
   padding: 5px; }
 
 .orden {
-  display: grid;
   flex: 30%;
   padding: 5px; }
 
@@ -112,13 +111,29 @@ section div img {
   grid-area: m; }
 
 .gFooter {
-  grid-area: f; }
+  grid-area: f;
+  text-align: center; }
+
+.error404 {
+  background-image: url(../img/error404.jpg);
+  background-repeat: no-repeat;
+  background-position: center; }
+  .error404 h1 {
+    color: black;
+    text-align: center;
+    margin-top: 500px; }
+
+.boton {
+  display: block;
+  text-decoration: none;
+  background-color: green; }
 
 footer {
   background-color: #2F7635; }
 
 .pie__icon--sm {
-  width: 50px; }
+  width: 50px;
+  margin: 3px 3px; }
 
 .pie__titulo--sm {
   font-size: 2rem; }
